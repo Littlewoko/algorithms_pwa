@@ -69,12 +69,20 @@ class App extends Component {
   }
 
   checkAlgorithm = () => {
-    for(let i=0; i < this.state.items.length; i++) {
-      if ( this.state.items[i] !== schoolAlgorithm[i] ) {
-        return false;
+    // for(let i=0; i < this.state.items.length; i++) {
+    //   if ( this.state.items[i] !== schoolAlgorithm[i] ) {
+    //     return false;
+    //   }
+    // }
+    // return true;
+    let flag = true;
+    schoolAlgorithm.forEach((item, index) => {
+      if (flag) {
+        flag = item === this.state.items[index];
       }
-    }
-    return true;
+    })
+
+    return flag;
   }
 
   onDragEnd(result) {
