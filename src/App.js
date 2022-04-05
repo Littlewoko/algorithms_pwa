@@ -1,38 +1,21 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-
-const Users = () => {
-  // state
-  const [users, setUsers] = React.useState([]);
-  // effects
-  React.useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((res) => res.json())
-      .then((users) => {
-        setUsers(users);
-      })
-      .catch((err) => {});
-  }, []);
-  //render
-  return (
-    <div>
-      <h2>Users</h2>
-      <ul>
-        {users.map((user) => (
-          <li key={user.id}>
-            {user.name} ({user.email})
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
+import Basics from './components/Basics';
+import Index from "./components/Index";
+import Loops from "./components/Loops";
+import NotFoundPage from './components/NotFoundPage';
+import Representation from './components/Representation';
 
 const App = () => (
   <BrowserRouter>
     <Routes>
-      <Route path="/" exact element={<Users />} />
+  
+      <Route path="/" exact element={<Index />} />
+      <Route path="/basics" exact element={<Basics />} />
+      <Route path="/loops" exact element={<Loops />} />
+      <Route path="/representation" exact element={<Representation />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   </BrowserRouter>
 );
