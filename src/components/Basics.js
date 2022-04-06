@@ -34,7 +34,7 @@ const Basics = () => (
                 first to final step would result in brushed teeth! This is the general idea of algorithms and they are 
                 fundamental to computation (Though a computer algorithm generally would not lead to brushed teeth).
             </p>
-            <Link to='/loops'>Next</Link>
+            <Link to='/basics/challenge'>Challenge Task</Link>
         </div>
     </div>
     

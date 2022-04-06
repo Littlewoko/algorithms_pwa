@@ -66,6 +66,53 @@ const Header = () => (
                 }
             > Lesson Three </NavLink>  
         </p> 
+        <p>
+            <NavLink to="/basics/challenge" 
+                activeclassname='is-active' 
+                exact="true" 
+                style={({ isActive }) => 
+                    isActive ? 
+                    {
+                        color: '#fff',
+                        background: '#7600dc',
+                    }
+                    : {
+                        color: '#545e6f',
+                        background: '#f0f0f0',
+                    }
+                }
+            > Challenge One </NavLink>  
+            <NavLink to="/loops/challenge" 
+                activeclassname='is-active' 
+                exact="true" 
+                style={({ isActive }) => 
+                    isActive ? 
+                    {
+                        color: '#fff',
+                        background: '#7600dc',
+                    }
+                    : {
+                        color: '#545e6f',
+                        background: '#f0f0f0',
+                    }
+                }
+            > Challenge Two </NavLink>  
+            <NavLink to="/representation/challenge" 
+                activeclassname='is-active' 
+                exact="true" 
+                style={({ isActive }) => 
+                    isActive ? 
+                    {
+                        color: '#fff',
+                        background: '#7600dc',
+                    }
+                    : {
+                        color: '#545e6f',
+                        background: '#f0f0f0',
+                    }
+                }
+            > Challenge Three </NavLink>  
+        </p> 
     </header>
 );
 

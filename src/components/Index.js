@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import Header from './Header';
 import Drag from './Drag';
 
@@ -14,6 +14,8 @@ const Index = () => (
 
         <p>Below is an example of the kinds of interactions you can expect within this application!
         Take your time and try to arrange the steps in to the correct order.</p>
+
+        <Link to='/basics'>Next</Link>
         <Drag />
         
     </div>

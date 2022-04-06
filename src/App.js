@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Basics from './components/Basics';
+import BasicsChallenge from './components/BasicsChallenge';
 import Index from "./components/Index";
 import Loops from "./components/Loops";
 import NotFoundPage from './components/NotFoundPage';
@@ -13,6 +14,7 @@ const App = () => (
   
       <Route path="/" exact element={<Index />} />
       <Route path="/basics" exact element={<Basics />} />
+      <Route path="/basics/challenge" exact element={<BasicsChallenge />} />
       <Route path="/loops" exact element={<Loops />} />
       <Route path="/representation" exact element={<Representation />} />
       <Route path="*" element={<NotFoundPage />} />
