@@ -133,12 +133,12 @@ class App extends Component {
                     </div>
                   )}
                 </Draggable>
-              ))}
-              {provided.placeholder}
+              ))}+              {provided.placeholder}
             </div>
           )}
         </Droppable>
       </DragDropContext>
+      <h1>{this.state.correct ? 'Correct!' : 'Not Quite'}</h1>
       </div>
     );
   }

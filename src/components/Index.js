@@ -7,7 +7,7 @@ const Index = () => (
     
     <div>
         <Header/>
-        <p>Welcome!</p>
+        <h1>Welcome!</h1>
         
         <p>The intention of this app is to help with the understanding and recognition of algorithms and how they can be applied
         to both real life situations, and areas within your study at GCSE level. </p>
