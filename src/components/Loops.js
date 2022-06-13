@@ -1,6 +1,16 @@
 import React from 'react';
 import Header from './Header';
 
+const showFunc = () => {
+    let div = document.getElementById('conditionalDiv');
+    if (div.style.display === 'none') {
+        div.style.display = 'block';
+    } else {
+        div.style.display = 'none';
+    }
+}
+
+
 const Loops = () => (
     
     <div>
@@ -13,9 +23,10 @@ const Loops = () => (
             </p>
         </div>
 
-        <div>
-            <h2> Conditionals </h2>
-
+        <h2> Conditionals <button onClick={showFunc}>Reveal</button></h2>
+        
+        <div id='conditionalDiv'>
+            
             <p>
                 Conditionals refer to the idea of an action being performed based on the status of a "condition". These Conditions 
                 can resolve to TRUE or FALSE (this is the idea of boolean values, where something has two possible values and always resolves
