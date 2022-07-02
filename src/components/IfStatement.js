@@ -1,5 +1,4 @@
 import React from 'react';
-import { ReactDOM } from 'react';
 import ReactTooltip from 'react-tooltip';
 
 import "../styles/components/_ifStatement.css";

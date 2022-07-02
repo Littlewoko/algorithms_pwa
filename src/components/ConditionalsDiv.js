@@ -1,5 +1,4 @@
 import React from 'react';
-import { ReactDOM } from 'react';
 
 import IfStatement from './IfStatement';
 
@@ -35,7 +34,7 @@ const ConditionalDiv = () => (
             to one, such as true/false or 1/0). Our conditional action will only be performed if the condition we have set
             resolves to true, else our default action will be performed.
 
-            Hover to gain more insight into this if statement.
+            Interact to gain more insight into the following code.
         </p>
 
         <IfStatement />
