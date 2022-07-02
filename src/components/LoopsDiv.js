@@ -1,4 +1,6 @@
 import React from 'react';
+import ForLoopEx from './ForLoopEx';
+import WhileLoopEx from './WhileLoopEx';
 
 const showFuncLoop = () => {
     let div = document.getElementById('loopDiv');
@@ -26,7 +28,15 @@ const LoopsDiv = () => (
         </h2>
     
     <div id='loopDiv'>
-        
+        <p>
+            Loops make use of conditionals and are a logical next step from if statements (As seen above).
+            A loop will repeat an action WHILE a condition is true, or FOR a specific number of repetitions.
+            This forms the basis of the while loop and the for loop, our two options for repeating a task.
+        </p>
+
+        <WhileLoopEx />
+
+        <ForLoopEx />
         
     </div>
 
