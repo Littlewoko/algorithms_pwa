@@ -2,8 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => (
-    <header>
-        <h1>Algorithms PWA!</h1>
+    <header className="header">
+    <div className="continer">
+        <h1 className="header_title">Algorithms PWA!</h1>
         <p>
             <NavLink to="/" 
                 activeclassname='is-active' 
@@ -113,6 +114,7 @@ const Header = () => (
                 }
             > Challenge Three </NavLink>  
         </p> 
+        </div>
     </header>
 );
 

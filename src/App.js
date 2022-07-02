@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
+import "./styles/_base.css";
+import "./styles/components/_header.css";
 import Basics from './components/Basics';
 import BasicsChallenge from './components/BasicsChallenge';
 import Index from "./components/Index";
