@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import InputForm from './InputForm';
 import { Link } from 'react-router-dom';
 import ReactTooltip from 'react-tooltip';
 
@@ -23,6 +24,8 @@ const ChallengeTwo = () => (
             <ReactTooltip />
             <li data-tip={""}>ELSE (n * 2)</li>
             <ReactTooltip />
+            <InputForm />
+
         </ul>
         <Link to='/representation'>Next</Link>
 
