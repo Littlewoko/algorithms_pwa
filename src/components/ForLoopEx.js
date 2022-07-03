@@ -8,7 +8,7 @@ const ForLoopEx = () => (
         Below is an example of a FOR loop:
 
         <ul>
-        <li data-tip={loopTip}>For(5 loops)</li>
+        <li data-tip={loopTip}>For(5 repetitions)</li>
         <ReactTooltip />
         <ul>
         <li>eat</li>

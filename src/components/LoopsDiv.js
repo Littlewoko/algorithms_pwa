@@ -37,6 +37,14 @@ const LoopsDiv = () => (
         <WhileLoopEx />
 
         <ForLoopEx />
+
+        <p>
+            As we can see above, both the WHILE and FOR loops can be used to solve the same problems. The 
+            reason to use one or the other depends on whether or not the number of loops to be performed is 
+            known prior to the loop commencing or not. It is important to understand that either can be used 
+            in place of the other with some simple changes to how they are presented, so you should make use of 
+            the one that is easiest to understand when reading your code back.
+        </p>
         
     </div>
 
