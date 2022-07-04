@@ -21,7 +21,7 @@ const ConditionalsChallenge = () => (
             
 
         </ul>
-        <InputForm />
+        <InputForm correct='5' />
     </div>
 )
 
