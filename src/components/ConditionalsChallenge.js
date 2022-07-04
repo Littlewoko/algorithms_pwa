@@ -18,10 +18,10 @@ const ConditionalsChallenge = () => (
             <ReactTooltip />
             <li data-tip={""}>ELSE (n * 2)</li>
             <ReactTooltip />
-            <InputForm />
+            
 
         </ul>
-    
+        <InputForm />
     </div>
 )
 

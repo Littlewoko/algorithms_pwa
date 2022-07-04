@@ -1,5 +1,5 @@
 import ReactTooltip from 'react-tooltip';
-import InputForm from './InputForm';
+import LoopInputForm from './LoopInputForm';
 
 const iteratorToolTip = "i is our iterator, initialised to zero";
 const lessThanToolTip = "WHILE i is less than six";
@@ -20,7 +20,7 @@ const LoopsChallenge = () => (
             </ul>
 
         </ul>
-    
+        <LoopInputForm />
     </div>
 )
 
