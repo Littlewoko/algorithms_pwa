@@ -1,4 +1,7 @@
 import React from "react";
+import ReactTooltip from "react-tooltip";
+
+const tip = "This is the same algorithm for counting to five as presented above!";
 
 const Flowcharts = () => (
     <div>
@@ -10,6 +13,12 @@ const Flowcharts = () => (
         the reader to determine the "flow" of the program, or in other wodrds which 
         order to read the shapes.
     </p>
+    <p data-tip={tip}>?</p>
+    <ReactTooltip />
+    <img src="flow_shapes.png" alt="Flowchart shapes" 
+    width="350" height="400" />
+    <img src="flowchart.png" alt="Flowchart" 
+    width="350" height="400"/>
     </div>
 )
 
