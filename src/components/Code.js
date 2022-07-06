@@ -4,10 +4,10 @@ const Code = () => (
     <div>
     <h2>Code</h2>
         <p>
-            Code is the ultimate goal of any written algorithm. Using an algorithm
-            which has been written well in one of the previous methods we can translate 
-            our desired function to a chosen programming language and, if all goes well, 
-            have a working program/ function.
+            Code is the ultimate goal when writing or representing an algorithm. We can use 
+            our pseudo code or flowchart to translate an algorithm into a working program or
+            function. We can then make use of the algorithm in real time to solve our initial
+            problem. 
         </p>
          
     </div>

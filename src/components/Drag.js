@@ -66,23 +66,21 @@ class App extends Component {
       correct: false,
     };
     this.onDragEnd = this.onDragEnd.bind(this);
+    
   }
 
   checkAlgorithm = () => {
-    // for(let i=0; i < this.state.items.length; i++) {
-    //   if ( this.state.items[i] !== schoolAlgorithm[i] ) {
-    //     return false;
-    //   }
-    // }
-    // return true;
+    
     let flag = true;
     schoolAlgorithm.forEach((item, index) => {
       if (flag) {
         flag = item === this.state.items[index];
-      }
+      } 
     })
 
     return flag;
+
+    
   }
 
   onDragEnd(result) {
@@ -96,13 +94,11 @@ class App extends Component {
       result.source.index,
       result.destination.index
     );
-
-    this.setState({
-      items,
-      correct: this.checkAlgorithm()
-    }); 
+    
+    this.setState({items, correct: this.checkAlgorithm()});
   }
 
+  //{this.state.correct ? 'Correct!' : 'Not Quite'}
   // Normally you would want to split things out into separate components.
   // But in this example everything is just done in one place for simplicity
   render() {
@@ -138,7 +134,7 @@ class App extends Component {
           )}
         </Droppable>
       </DragDropContext>
-      <h1>{this.state.correct ? 'Correct!' : 'Not Quite'}</h1>
+      
       </div>
     );
   }
