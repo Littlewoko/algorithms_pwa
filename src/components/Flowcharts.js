@@ -15,9 +15,9 @@ const Flowcharts = () => (
     </p>
     <p data-tip={tip}>?</p>
     <ReactTooltip />
-    <img src="flow_shapes.png" alt="Flowchart shapes" 
+    <img src="flow_shapes.PNG" alt="Flowchart shapes" 
     width="350" height="400" />
-    <img src="flowchart.png" alt="Flowchart" 
+    <img src="flowchart.PNG" alt="Flowchart" 
     width="350" height="400"/>
     </div>
 )
